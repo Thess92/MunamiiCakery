@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(160, 115, 157);
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+  
+header li a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+header li a:hover {
+    color: rgb(181, 178, 178);
+}
+
+.homeImg {
+    margin: 0;
+    padding: 0;
+    width: 50%
+}
+
+.logo {
+    background-color: rgb(237, 241, 241);
+    color: rgb(160, 115, 157);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.logoImg {
+    width: 50%;
+}
+
+.logoText {
+    padding-top: 100px;
+}
+
+footer {
+    background-color: rgb(160, 115, 157);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+
+footer li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+footer li a:hover {
+    color: rgb(181, 178, 178);
+}
+
+footer li img {
+    width: 25px;
+}
+
+.about {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.about img {
+    width: 300px;
+}
+
+.contact {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.contact img {
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.item {
+    width: 250px;
+    box-shadow: 2px 2px 5px grey;
+    margin-bottom: 20px;
+}
+
+.item img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 601px) {
+    header ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header li {
+        padding-bottom: 10px;
+    }
+
+    .homeImg {
+        visibility: hidden;
+        position: fixed;
+    }
+
+    footer ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer li {
+        padding-bottom: 10px;
+    }
+  }
